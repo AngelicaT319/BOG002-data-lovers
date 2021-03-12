@@ -1,20 +1,18 @@
-//import { example } from './data.js';
-//import data from './data/lol/lol.js';
 
-//import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+//Aqui lo del DOM
+import data from './data/lol/lol.js';
+
+ import {prueba} from './data.js';
+ prueba(data)
+ 
 
 
-let contenido = document.querySelector('#contenido')
 
-function traer() {
-    fetch('lol.json')
-    .then(res => res.json())
-    .then( datos =>{
-        console.log(datos)
 
-    })
 
-}
+
+
+
+
 
 
