@@ -5,6 +5,7 @@
 //export const anotherExample = () => 'OMG';
 
 export function prueba(text){
-    console.log(text)
+    
     
 }
+
