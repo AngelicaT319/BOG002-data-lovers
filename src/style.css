@@ -1,5 +1,7 @@
-/*Header*/
+body{
+    background:cadetblue
+}
 
 .inicio {
-    background-image: url(/src/img/header.jpg)
+    background: chartreuse;
 }
