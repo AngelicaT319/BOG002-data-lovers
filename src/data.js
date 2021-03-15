@@ -1,7 +1,7 @@
-//export 
+export 
 
-//function prueba(){    
+function prueba(){    
     
     
-//}
+}
 
