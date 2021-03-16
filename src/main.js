@@ -1,23 +1,9 @@
 
 //Aqui lo del DOM
-import data from './data/lol/lol.js';
+//import data from './data/lol/lol.js';
 
-import {prueba} from './data.js';
+//import {DataCampeones} from  './data.js';
 
-prueba(data)
- 
+const contenido = document.getElementById('contenido');
 
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
+//Funcion para buscar campeones
