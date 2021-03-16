@@ -16,7 +16,7 @@ body{
     background:url(/img/header.jpg);
     background-position: center center;
     background-size: cover;
-    height: 70vh;
+    height: 70%;
    
 }
 
@@ -35,5 +35,5 @@ footer{
     display: inline-block;
     justify-content: space-around;
     
-    height: 10px; 
+    height: 10%; 
 }
