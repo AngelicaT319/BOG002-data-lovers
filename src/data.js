@@ -1,7 +1,8 @@
-export 
+export const example = (describir) => {
 
-function prueba(){    
-    
-    
-}
+  var loqueobtuve=describir;
+  document.getElementById('root').innerHTML=loqueobtuve;
+  return example
+};
 
+export const anotherExample = () => {}
