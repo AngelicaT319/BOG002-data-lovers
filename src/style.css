@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{   
+  background-image: linear-gradient(-120deg, #025891bb, #731cbab9);
+  
+    
+    
+    
+}
+
+/*Header*/
+.inicio {
+    background:url(/src/img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 70vh;
+   
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+}
+ 
+footer{
+    background: #353535;
+    padding-top: 40px;
+    margin-top: 20px;
+}
+
+.redes-sociales ul li{
+    display: inline-block;
+    justify-content: space-around
+    width: 10px;
+    height: 10px; 
+}

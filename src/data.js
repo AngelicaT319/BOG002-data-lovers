@@ -1,12 +1,7 @@
-// estas funciones son de ejemplo
+export 
 
-export const example = (describir) => {
-  
-  var loqueobtuve=describir;
-  document.getElementById('root').innerHTML=loqueobtuve;
-  return example
-};
+function prueba(){    
+    
+    
+}
 
-export const anotherExample = () => {
-  return 'OMG';
-};
