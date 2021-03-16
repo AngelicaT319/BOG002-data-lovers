@@ -33,7 +33,7 @@ footer{
 
 .redes-sociales ul li{
     display: inline-block;
-    justify-content: space-around
+    justify-content: space-around;
     width: 10px;
     height: 10px; 
 }
