@@ -13,7 +13,7 @@ body{
 
 /*Header*/
 .inicio {
-    background:url(/src/img/header.jpg);
+    background:url(/img/header.jpg);
     background-position: center center;
     background-size: cover;
     height: 70vh;
