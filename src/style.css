@@ -15,9 +15,9 @@ body{
 /*Header*/
 .inicio {
     background:url(img/header.jpg);
-    background-position: center center;
+    background-position: 80%;
     background-size: cover;
-    height: 70%;
+    height: 100%;
    
 }
 
@@ -28,13 +28,70 @@ body{
  
 footer{
     background: #353535;
-    padding-top: 40px;
-    margin-top: 20px;
+    height: 10%;
+    width: 100%;
 }
 
 .redes-sociales ul li{
     display: inline-block;
     justify-content: space-around;
     
-    height: 10%; 
+    height: 5%; 
 }
+.filtros{
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+}
+a {
+    color:black;
+    display: block;
+    text-decoration: none;
+    
+
+}
+a:hover{
+    background-color: #d2691e;
+}
+.vertical{
+    display: block;
+    display: none;
+    
+}
+.roles{
+    display: block;
+    display: none;
+
+}
+.posicion{
+    display: block;
+    display: none;
+
+}
+.filtros:hover .vertical{
+    display:block;
+}
+/*.filtros .vertical:hover .roles{
+    display:block;
+}*/
+.filtros .vertical:hover .posicion{
+    display:block;
+}
+
+#buscador{
+    width: 80%;
+}
+#logo{
+    width: 40%;
+    height: 100%;
+}
+#logodentro{
+    width: 40%;
+    height: 40%;
+}
+.inline-block {
+    display: inline-block;
+    width: 10%;
+    height: 30%;
+    border: 1px solid red;
+  }
