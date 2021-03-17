@@ -12,6 +12,7 @@ body{
     
 }
 
+
 /*Header*/
 
 .inicio {
@@ -44,6 +45,9 @@ body{
 }
 
  
+
+
+/*Pie y redes sociales*/
 footer{
     background: #353535;
     max-height: 50%;
@@ -91,17 +95,19 @@ a.menusito:hover{
 }
 .posicion{
     display: block;
-    display: none;
+   
 
 }
 .filtros:hover .vertical{
+    float: right;
     display:block;
 }
-.filtros .vertical:hover .roles{
+/*.filtros .vertical:hover .roles{
     display:block;
-}
+}*/
 .filtros .vertical:hover .posicion{
     display:block;
+   
 }
 
 #buscador{
@@ -111,10 +117,8 @@ a.menusito:hover{
 
 
 .inline-block {
-    display: inline-block;    
+    display: inline-block;
     width: 10%;
     height: 30%;
     border: 1px solid red;
   }
-
- 
