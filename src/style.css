@@ -44,9 +44,6 @@ body{
 }
 
  
-<<<<<<< HEAD
-
-=======
 footer{
     background: #353535;
     max-height: 50%;
@@ -67,7 +64,6 @@ footer{
     align-items: center;
 width: 25%;
 }
->>>>>>> 95a80159ff43ac0e9830e125222029e1201d9d0e
 .filtros{
     width: 20%;
     display: inline-block;
@@ -101,9 +97,9 @@ a.menusito:hover{
 .filtros:hover .vertical{
     display:block;
 }
-/*.filtros .vertical:hover .roles{
+.filtros .vertical:hover .roles{
     display:block;
-}*/
+}
 .filtros .vertical:hover .posicion{
     display:block;
 }
