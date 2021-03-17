@@ -13,33 +13,74 @@ body{
 }
 
 /*Header*/
+
 .inicio {
-    background:url(img/header.jpg);
-    background-position: 80%;
+    
+    background:url(./img/header.jpg);
+    background-position: 80% 30%;
+     
     background-size: cover;
-    height: 100%;
+    padding-top: 0%;
+    padding-bottom: 20%;
+    
+  
+   
+   
+   
+}
+#logo{
+    
+    display:flex;
+   
+    align-items:flex-end;
+    
+    width: 10%;
+    
+
+}
+#logodentro{
+    width: 100%;
+    
+}
+
+ 
+<<<<<<< HEAD
+
+=======
+footer{
+    background: #353535;
+    max-height: 50%;
    
 }
 
-.logos {
-    display: flex;
-    justify-content: space-between;
+.imageneshor {
+    display: inline-block;
+    align-items: center;
+    justify-content: space-around;
+    background-color: violet;
+    width: 24.5%;
+    
+    
 }
- 
-
+.imagenes{
+    display: flex;
+    align-items: center;
+width: 25%;
+}
+>>>>>>> 95a80159ff43ac0e9830e125222029e1201d9d0e
 .filtros{
     width: 20%;
     display: inline-block;
     text-align: center;
 }
-a {
+a.menusito{
     color:black;
     display: block;
     text-decoration: none;
     
 
 }
-a:hover{
+a.menusito:hover{
     background-color: #d2691e;
 }
 .vertical{
@@ -70,14 +111,9 @@ a:hover{
 #buscador{
     width: 80%;
 }
-#logo{
-    width: 40%;
-    height: 100%;
-}
-#logodentro{
-    width: 40%;
-    height: 40%;
-}
+
+
+
 .inline-block {
     display: inline-block;    
     width: 10%;
