@@ -121,15 +121,4 @@ a.menusito:hover{
     border: 1px solid red;
   }
 
-  footer{
-    background: #353535;
-    height: 10%;
-    width: 100%;
-}
-
-.redes-sociales ul li{
-    display: inline-block;
-    justify-content: space-around;
-    
-    height: 5%; 
-}
+ 
