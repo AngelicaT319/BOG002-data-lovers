@@ -12,6 +12,7 @@ body{
     
 }
 
+
 /*Header*/
 .inicio {
     background:url(./img/header.jpg);
@@ -26,7 +27,16 @@ body{
     display: flex;
     justify-content: space-between;
 }
+
+.contenido{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
  
+
+
+/*Pie y redes sociales*/
 footer{
     background: #353535;
     padding-top: 40px;
