@@ -26,18 +26,7 @@ body{
     justify-content: space-between;
 }
  
-footer{
-    background: #353535;
-    height: 10%;
-    width: 100%;
-}
 
-.redes-sociales ul li{
-    display: inline-block;
-    justify-content: space-around;
-    
-    height: 5%; 
-}
 .filtros{
     width: 20%;
     display: inline-block;
@@ -90,8 +79,21 @@ a:hover{
     height: 40%;
 }
 .inline-block {
-    display: inline-block;
+    display: inline-block;    
     width: 10%;
     height: 30%;
     border: 1px solid red;
   }
+
+  footer{
+    background: #353535;
+    height: 10%;
+    width: 100%;
+}
+
+.redes-sociales ul li{
+    display: inline-block;
+    justify-content: space-around;
+    
+    height: 5%; 
+}
