@@ -1,7 +1,7 @@
 //Aqui lo del DOM
 import data from './data/lol/lol.js';
 
-//import {DataCampeones} from  './data.js';
+import {buscarCampeones} from  './data.js';
 
 const contenido = document.getElementById('contenido');
 
@@ -12,11 +12,11 @@ for (var campeones in data.data){
     var div = document.createElement("div");
     var name = document.createElement("h3");
     var imagenCampeon = document.createElement("img");
-    div.className='inline-block';
+    div.className='card';
+     
     
-    
-    /*name.className='inline-block';
-    imagenCampeon.className='inline-block';*/
+    /*name.className='card';
+    imagenCampeon.className='card';*/
 
     imagenCampeon.src = campeon.img;
     name.innerText = campeon.name
@@ -24,21 +24,5 @@ for (var campeones in data.data){
     div.appendChild(imagenCampeon)
     contenido.appendChild(div);
 }
- 
-
-
-const Buscar = document.getElementById('Buscar');
-const campeon = [];
-
-
-Buscar.addEventListener('keyup', (e) =>{
-const buscarObject = e.target.value;
-const filterCampeon = campeon.filter( campeon => {
- return campeon.name.contains(buscarObject)
-});
-console.log(filterCampeon);
-
-
-});
-
-
+  
+buscarCampeones(".card-filter", ".card");

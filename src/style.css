@@ -50,66 +50,21 @@ body{
     
 }
 
- 
-
-
-/*Pie y redes sociales*/
-
-.filtros{
-    width: 20%;
-    display: inline-block;
-    text-align: center;
-}
-a.menusito{
-    color:black;
-    display: block;
-    text-decoration: none;
-    
-
-}
-a.menusito:hover{
-    background-color: #d2691e;
-}
-.vertical{
-    display: block;
-    display: none;
-    
-}
-.roles{
-    display: block;
-    display: none;
-
-}
-.posicion{
-    float: inline-start;
-    display: block;
-   
-
-}
-.filtros:hover .vertical{
-    float: right;
-    display:block;
-    
-}
-/*.filtros .vertical:hover .roles{
-    display:block;
-}*/
-.filtros .vertical:hover .posicion{
-    display:block;
-}
-
-#buscador{
-    width: 20%;
-}
-
-
-
-.inline-block {
+.card {
     display: inline-block;
     width: 10%;
     height: 30%;
     border: 1px solid red;
+    
   }
+
+  .filter {
+      display: none;
+
+  }
+
+
+
 
   footer{
     background: #353535;
