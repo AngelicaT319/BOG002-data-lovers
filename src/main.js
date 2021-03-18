@@ -24,3 +24,21 @@ for (var campeones in data.data){
     div.appendChild(imagenCampeon)
     contenido.appendChild(div);
 }
+ 
+
+
+const Buscar = document.getElementById('Buscar');
+const campeon = [];
+
+
+Buscar.addEventListener('keyup', (e) =>{
+const buscarObject = e.target.value;
+const filterCampeon = campeon.filter( campeon => {
+ return campeon.name.contains(buscarObject)
+});
+console.log(filterCampeon);
+
+
+});
+
+

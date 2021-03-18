@@ -1,4 +1,4 @@
-/*Header*/
+
 *{
     margin: 0;
     padding: 0;
@@ -39,44 +39,22 @@ body{
     
 
 }
-<<<<<<< HEAD
 
 .contenido{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-=======
 #logodentro{
     width: 100%;
     
 }
 
->>>>>>> 95a80159ff43ac0e9830e125222029e1201d9d0e
  
 
 
 /*Pie y redes sociales*/
-footer{
-    background: #353535;
-    max-height: 50%;
-   
-}
 
-.imageneshor {
-    display: inline-block;
-    align-items: center;
-    justify-content: space-around;
-    background-color: violet;
-    width: 24.5%;
-    
-    
-}
-.imagenes{
-    display: flex;
-    align-items: center;
-width: 25%;
-}
 .filtros{
     width: 20%;
     display: inline-block;
@@ -103,12 +81,15 @@ a.menusito:hover{
 
 }
 .posicion{
+    float: inline-start;
     display: block;
-    display: none;
+   
 
 }
 .filtros:hover .vertical{
+    float: right;
     display:block;
+    
 }
 /*.filtros .vertical:hover .roles{
     display:block;
@@ -118,7 +99,7 @@ a.menusito:hover{
 }
 
 #buscador{
-    width: 80%;
+    width: 20%;
 }
 
 
@@ -129,3 +110,24 @@ a.menusito:hover{
     height: 30%;
     border: 1px solid red;
   }
+
+  footer{
+    background: #353535;
+    max-height: 50%;
+   
+}
+
+.imageneshor {
+    display: inline-block;
+    align-items: center;
+    justify-content: space-around;
+    background-color: violet;
+    width: 24.5%;
+    
+    
+}
+.imagenes{
+    display: flex;
+    align-items: center;
+width: 25%;
+}
