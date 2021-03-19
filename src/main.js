@@ -2,7 +2,7 @@ import data from './data/lol/lol.js';
 
 import {buscarCampeones} from  './data.js';
 
-const contenido = document.getElementById('contenido');
+const contenido = document.getElementById('cartas');
 
 //Funcion para buscar campeones
 //genera reflow
