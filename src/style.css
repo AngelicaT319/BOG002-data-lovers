@@ -1,12 +1,11 @@
-/*Header*/
+
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body{   
   background-image: linear-gradient(-120deg, #025891bb, #731cbab9);
-  margin:0;
   
     
     
@@ -15,235 +14,80 @@ body{
 
 
 /*Header*/
-.js-focus-visible{
-    width: 100%;
-    height: 100%;
-}
+
 .inicio {
-    width: 100%;
     
     background:url(./img/header.jpg);
     background-position: 80% 30%;
      
-    background-size:100%;
+    background-size: cover;
     padding-top: 0%;
-    padding-bottom: 20%;
-    
-  
-   
-   
+    padding-bottom: 20%;     
    
 }
+
 #logo{
     
     display:flex;   
     align-items:flex-end;    
-    width: 10%;
+    width: 10%;    
+
 }
+
+
+
 #logodentro{
     width: 100%;
     
 }
 
-<<<<<<< HEAD
- 
-
-
-/*Pie y redes sociales*/
-=======
-
-
->>>>>>> eef455193d4920a991b23cf4ff5c3be117c76488
-footer{
-    background: #353535;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+.contenido{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr)) ;       
+    padding-top: 20px;
+}
+.card {
+    display: inline-block;
+    flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
+    width: 150px;
+    height: 100px;
+    border: 1px solid black;
+  
+  }
+
+  .filter {
+      visibility: hidden;
+      opacity: 0;
+      order: 1;
+  }
+
+.card-filter{
+    margin-left: 20px;
+    margin-top: 20px;
+    
 }
 
 
-.imageneshor {
-    
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    
+
+.footer{
+    background: #353535;
+    max-height: 50%;
    
-    
+}
+
+.imageneshor {
+    display: inline-block;
+    align-items: center;
+    justify-content: space-around;
+    background-color: violet;
+    width: 24.5%;
     
     
 }
 .imagenes{
-    
-    width: 30%;
-    margin-left: 30%;
-}
-.contenedormenu{
-    position: relative;
-    z-index: 1;
-}
-
-.filtros{
-    height: 3em;
-    width: 50%;
-    background-color:rgba(244, 225, 51, 0.589);
-   
     display: flex;
-    align-items:center ;
-    justify-content: space-between;
-    flex-direction: row;
-    
-}
-#menudesple{
-    width: 30%;
-    height: 100%;
-    display: block;
-    flex-direction: column;
-    
-}
-#textofiltro{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
     align-items: center;
+width: 25%;
 }
-.menusito{
-    background-color: lawngreen;
-    display: block;
-    text-decoration: none;
-
-    
-
-}
-<<<<<<< HEAD
-.posicion{
-    display: block;
-   
-
-}
-.filtros:hover .vertical{
-    float: right;
-    display:block;
-}
-/*.filtros .vertical:hover .roles{
-    display:block;
-}*/
-.filtros .vertical:hover .posicion{
-    display:block;
-   
-=======
-#desplegables{
-    
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-align-content: center;}
-
-/*a.menusito:hover{
-    background-color: #d2691e;
-}*/
-
-.redes-sociales{
-    width: 100%;
-    
-
-}
-.menusito2:hover{
-    display:block;
-}
-
-#desplegables{
-    display: block;
-}
-nav ul{
-    list-style: none;
->>>>>>> eef455193d4920a991b23cf4ff5c3be117c76488
-}
-
-nav a{
-    text-decoration: none;
-}
-.abrirmenu{
-    display: block;
-}
-
-#busqueda{
-    width: 30%;
-    margin-left: 20%;
-    border: solid springgreen;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-#cartas{
-    z-index: -1;
-}
-.contenidoflex{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.cards{
-    width: 100px;
-    height: 100px;
-    /*display: flex;
-    align-content: center;
-    justify-content: center;*/
-}
-.namechamp{
- border: solid red;
-}
-.imgchamp{
-    border: solid royalblue;
-
-}
-#subitem1{
-    display: none;
-}
-#desplegables{
-    display: none;
-}
-/*.inline-block {
-    display: inline-block;
-    width: 10%;
-    height: 30%;
-    border: 1px solid red;
-  }*/
-
- #segundoscreen{
-    display:block; 
-    position: absolute; 
-    
-    z-index: 2; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-     
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.6);
-  }
- 
-  .filter {
-    visibility: hidden;
-    opacity: 0;
-    order: 1;
-}
-
-.card-filter{
-    display: flex;
-    text-align: center;
-    width: 100%;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  
-  
-}
-  
