@@ -32,13 +32,6 @@ body{
     align-items:flex-end;    
     width: 10%;    
 
-<<<<<<< HEAD
-}
-
-
-
-#logodentro{
-=======
 
 
 .filtros{
@@ -61,7 +54,6 @@ body{
 }
 #textofiltro{
     display: flex;
->>>>>>> 3f144b2cef5d422e5a1f02687bb519dd4dbed1fe
     width: 100%;
     
 }
@@ -96,21 +88,6 @@ body{
 
 
 
-<<<<<<< HEAD
-.footer{
-    background: #353535;
-    max-height: 50%;
-   
-}
-
-.imageneshor {
-    display: inline-block;
-    align-items: center;
-    justify-content: space-around;
-    background-color: violet;
-    width: 24.5%;
-    
-=======
 #cartas{
     z-index: -1;
 }
@@ -153,16 +130,10 @@ body{
  #segundoscreen{
     display:block; 
     position: absolute; 
->>>>>>> 3f144b2cef5d422e5a1f02687bb519dd4dbed1fe
     
 }
 .imagenes{
     display: flex;
-<<<<<<< HEAD
-    align-items: center;
-width: 25%;
-}
-=======
     text-align: center;
     width: 100%;
     justify-content: center;
@@ -203,4 +174,3 @@ footer{
     z-index: 1;
 }
   
->>>>>>> 3f144b2cef5d422e5a1f02687bb519dd4dbed1fe
