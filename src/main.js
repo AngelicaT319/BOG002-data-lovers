@@ -9,9 +9,8 @@ const contenido = document.getElementById('cartas');
 for (var campeones in data.data){
     const campeon = (data.data[campeones])
     var div = document.createElement("div");
-    var name = document.createElement("h1");
+    var name = document.createElement("h3");
     var imagenCampeon = document.createElement("img");
-    var tipoCampeon = document.createElement("h2")
     div.className='card';
      
     
@@ -19,11 +18,9 @@ for (var campeones in data.data){
     imagenCampeon.className='card';*/
 
     imagenCampeon.src = campeon.img;
-    name.innerText = campeon.name;
-    tipoCampeon.innerText = campeon.tags;
+    name.innerText = campeon.name
     div.appendChild(name)
     div.appendChild(imagenCampeon)
-    div.appendChild(tipoCampeon)
     contenido.appendChild(div);
 }
   
