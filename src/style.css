@@ -32,6 +32,22 @@ body{
     align-items:flex-end;    
     width: 10%;    
 
+
+
+ 
+    
+    
+}
+.imagenes{
+    
+    width: 30%;
+    margin-left: 30%;
+}
+.contenedormenu{
+    position: relative;
+    z-index: 1;
+}
+
 footer{
     background: #353535;
     height: 100px;
@@ -153,4 +169,5 @@ footer{
   
   
 }
+  
   
