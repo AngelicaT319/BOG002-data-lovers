@@ -153,39 +153,4 @@ footer{
   
   
 }
-<<<<<<< HEAD
-
-footer{
-    background: #353535;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-}
-
-
-.imageneshor {
-    
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    
-   
-    
-    
-    
-}
-.imagenes{
-    
-    width: 30%;
-    margin-left: 30%;
-}
-.contenedormenu{
-    position: relative;
-    z-index: 1;
-}
   
-=======
-  
->>>>>>> parent of 3f144b2 (Agregado de bordes a la carts y roles de los campeones)
