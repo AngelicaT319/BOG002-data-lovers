@@ -32,11 +32,36 @@ body{
     align-items:flex-end;    
     width: 10%;    
 
+<<<<<<< HEAD
 }
 
 
 
 #logodentro{
+=======
+
+
+.filtros{
+    height: 3em;
+    width: 50%;
+    background-color:rgba(244, 225, 51, 0.589);
+   
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+#menudesple{
+    width: 30%;
+    height: 100%;
+    display: block;
+    flex-direction: column;
+    
+}
+#textofiltro{
+    display: flex;
+>>>>>>> 3f144b2cef5d422e5a1f02687bb519dd4dbed1fe
     width: 100%;
     
 }
@@ -71,6 +96,7 @@ body{
 
 
 
+<<<<<<< HEAD
 .footer{
     background: #353535;
     max-height: 50%;
@@ -84,10 +110,97 @@ body{
     background-color: violet;
     width: 24.5%;
     
+=======
+#cartas{
+    z-index: -1;
+}
+.contenidoflex{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    background-color: blanchedalmond;
+    
+}
+
+.namechamp{
+ border: solid red;
+}
+
+.imgchamp{
+    border: solid royalblue;
+
+}
+#subitem1{
+    display: none;
+}
+#desplegables{
+    display: none;
+}
+.inline-block {
+    display: inline-block;
+    width: 10%;
+    height: 30%;
+    border: 1px solid red;
+  }
+
+ #segundoscreen{
+    display:block; 
+    position: absolute; 
+>>>>>>> 3f144b2cef5d422e5a1f02687bb519dd4dbed1fe
     
 }
 .imagenes{
     display: flex;
+<<<<<<< HEAD
     align-items: center;
 width: 25%;
 }
+=======
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+  
+}
+
+footer{
+    background: #353535;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+.imageneshor {
+    
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    
+   
+    
+    
+    
+}
+.imagenes{
+    
+    width: 30%;
+    margin-left: 30%;
+}
+.contenedormenu{
+    position: relative;
+    z-index: 1;
+}
+  
+>>>>>>> 3f144b2cef5d422e5a1f02687bb519dd4dbed1fe
