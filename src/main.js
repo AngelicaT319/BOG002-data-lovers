@@ -27,6 +27,13 @@ for (var campeones in data.data){
    
 }
 
+for (var campeones in data.data){
+
+    let campeon = (data.data[campeones].tags)
+    
+    console.log(data.data[campeones].name,campeon)
+}
+
     
 buscarCampeones(".card-filter", ".card");
 
@@ -35,11 +42,18 @@ var roles=document.getElementsByClassName("roles");
 var roleslista=""
 for (let i = 0; i < roles.length; i++) {
     roles[i].addEventListener("click", ()=>{
-    if (roles[i].textContent=="Central" ){   
+    if (roles[i].textContent=="Apoyo" ){   
      roleslista="Support"
-    } else if(roles[i].textContent=="Ataque"){
-      roleslista="Fighter"
-    } else if(roles[i].textContent=="Tanque"){
+    } else if(roles[i].textContent=="Asesino"){
+      roleslista="Assassin"
+    } else if(roles[i].textContent=="Luchador"){
+        roleslista="Fighter"
+    }else if(roles[i].textContent=="Tirador"){
+        roleslista="Marksman"
+    }else if(roles[i].textContent=="Mago"){
+        roleslista="Mage"
+    }
+    else if(roles[i].textContent=="Tanque"){
         roleslista="Tank"
     }
     var listaderoles=[]
