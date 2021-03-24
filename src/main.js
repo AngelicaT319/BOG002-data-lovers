@@ -70,7 +70,12 @@ for (let i = 0; i < roles.length; i++) {
     
 }
 )}
-
+var abrirpopup=document.getElementsByClassName("card");
+for (let i = 0; i < abrirpopup.length; i++) {
+    abrirpopup[i].addEventListener("click", ()=>{
+    var elemclickdiv=document.getElementById('myModal');
+    elemclickdiv.style.display = "block";
+    })}
 
 
 const botonabrir = document.getElementById('menudesple');
