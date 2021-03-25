@@ -31,10 +31,13 @@ for (var campeones in data.data) {
 function mostrarPopup (campeon){
     const contenido = document.getElementById("popup");
     const name = document.createElement("h1");
+    const image = document.createElement("img");
     const div = document.createElement("div");    
     div.id=('popupdiv');   
-    name.innerText = campeon.id 
+    name.innerText = campeon.id;
+    image.src = campeon.splash;
     div.appendChild(name);
+    div.appendChild(image);
     contenido.appendChild(div);
     }
 
@@ -70,7 +73,7 @@ for (let i = 0; i < roles.length; i++) {
     }
     var listaderoles = [];
     for (var rep in data.data) {
-      console.log(data.data[rep].tags);
+      //console.log(data.data[rep].tags);
       //includes verifica si dentro de un array hay un elemento
       //que tenga la palabra que le meti xd
       if (data.data[rep].tags.includes(roleslista)) {

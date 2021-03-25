@@ -15,7 +15,7 @@ export function buscarCampeones (input,selector) {
 }
    
 export function filtrorol (selector,tank) {
-    console.log( typeof entrandotanque);
+    //console.log( typeof entrandotanque);
     document.querySelectorAll(selector).forEach((element) => 
      tank.includes(element.textContent ) 
      ?element.classList.remove("filter")
