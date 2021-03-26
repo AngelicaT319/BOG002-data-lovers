@@ -75,26 +75,40 @@ for (let i = 0; i < roles.length; i++) {
 }
 )}
 
+var contenedorgrande=[]
+var listadecampeones={}
+for (var r in data.data){
+    var nombre=data.data[r].name
+    var ataque=data.data[r].stats.attackdamage
+    var nuevalista= new listadecampeones (nombre,ataque)
+    contenedorgrande.push(nuevalista)
+}
+console.log(contenedorgrande)
 var toplaner=document.getElementsByClassName("posiciones");
 
 for (let i = 0; i < toplaner.length; i++) {
     toplaner[i].addEventListener("click", ()=>{
-        var listadeposiciones=[]
+        
         var listamaxattack=[]
         for (var campeones in data.data){
             listamaxattack.push(data.data[campeones].stats.attackdamage); 
-            
             var maximo=Math.max.apply(null,listamaxattack) 
-            
         }
         console.log(listamaxattack)
         console.log(maximo)
+        var valores=[]
+        valores=listamaxattack.filter(item=>{
+            return item > maximo*0.95 || item==60
+            })
+        console.log(valores)
+        var listadeposiciones=[]
     if (toplaner[i].textContent=="Toplaner" ){   
         for (var a in data.data){
-     if((data.data[a].tags.includes("Tank") /*&& */)|| data.data[a].tags.includes("Fighter") ){
+     if((data.data[a].tags.includes("Tank") && data.data[a].stats.attackdamage<0.95*maximo)|| data.data[a].tags.includes("Fighter") ){
         listadeposiciones.push(data.data[a].name); 
         
-     }}console.log(listadeposiciones.length)
+     }}console.log(listadeposiciones);console.log(listadeposiciones.length)
+     
     }})}
     
     
