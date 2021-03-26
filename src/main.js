@@ -27,12 +27,16 @@ for (var campeones in data.data){
    
 }
 
-for (var campeones in data.data){
+/*for (var campeones in data.data){
 
-    let campeon = (data.data[campeones].tags)
-    
-    console.log(data.data[campeones].name,campeon)
-}
+    let campeon = (data.data[campeones].stats.attackdamage)
+    let defensa=(data.data[campeones].stats.armor)
+    let MAGIA=(data.data[campeones].stats.spellblock)
+    console.log( " ATAQUE ",campeon, " DEFENSA "+ defensa, " MAGIA " +MAGIA)
+    if (data.data[campeones].tags.includes("Fighter")){
+ console.log(data.data[campeones].name)
+    }
+}*/
 
     
 buscarCampeones(".card-filter", ".card");
@@ -70,12 +74,36 @@ for (let i = 0; i < roles.length; i++) {
     
 }
 )}
-var abrirpopup=document.getElementsByClassName("card");
+
+var toplaner=document.getElementsByClassName("posiciones");
+
+for (let i = 0; i < toplaner.length; i++) {
+    toplaner[i].addEventListener("click", ()=>{
+        var listadeposiciones=[]
+        var listamaxattack=[]
+        for (var campeones in data.data){
+            listamaxattack.push(data.data[campeones].stats.attackdamage); 
+            
+            var maximo=Math.max.apply(null,listamaxattack) 
+            
+        }
+        console.log(listamaxattack)
+        console.log(maximo)
+    if (toplaner[i].textContent=="Toplaner" ){   
+        for (var a in data.data){
+     if((data.data[a].tags.includes("Tank") /*&& */)|| data.data[a].tags.includes("Fighter") ){
+        listadeposiciones.push(data.data[a].name); 
+        
+     }}console.log(listadeposiciones.length)
+    }})}
+    
+    
+/*var abrirpopup=document.getElementsByClassName("card");
 for (let i = 0; i < abrirpopup.length; i++) {
     abrirpopup[i].addEventListener("click", ()=>{
     var elemclickdiv=document.getElementById('myModal');
     elemclickdiv.style.display = "block";
-    })}
+    })}*/
 
 
 const botonabrir = document.getElementById('menudesple');

@@ -1,6 +1,7 @@
 
 export function buscarCampeones (input,selector) {
-    
+    //utilizar metodos aca de los puros para filter
+    //y esto es lo que hay que testear
     document.addEventListener("keyup",(e) =>{
         //target funciona pa saber cuando avtive el evento jiji
          
