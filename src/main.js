@@ -1,6 +1,6 @@
 import data from './data/lol/lol.js';
 
-import {buscarCampeones} from  './data.js';
+import {buscarCampeones, filtrotop} from  './data.js';
 import {filtrorol} from  './data.js';
 
 const contenido = document.getElementById('cartas');
@@ -75,19 +75,16 @@ for (let i = 0; i < roles.length; i++) {
 }
 )}
 
-var contenedorgrande=[]
-var listadecampeones={}
-for (var r in data.data){
-    var nombre=data.data[r].name
-    var ataque=data.data[r].stats.attackdamage
-    var nuevalista= new listadecampeones (nombre,ataque)
-    contenedorgrande.push(nuevalista)
-}
-console.log(contenedorgrande)
-var toplaner=document.getElementsByClassName("posiciones");
 
-for (let i = 0; i < toplaner.length; i++) {
-    toplaner[i].addEventListener("click", ()=>{
+
+var contenedorgrande=[]
+
+
+
+var posicion=document.getElementsByClassName("posiciones");
+
+for (let i = 0; i < posicion.length; i++) {
+    posicion[i].addEventListener("click", ()=>{
         
         var listamaxattack=[]
         for (var campeones in data.data){
@@ -101,23 +98,73 @@ for (let i = 0; i < toplaner.length; i++) {
             return item > maximo*0.95 || item==60
             })
         console.log(valores)
-        var listadeposiciones=[]
-    if (toplaner[i].textContent=="Toplaner" ){   
-        for (var a in data.data){
-     if((data.data[a].tags.includes("Tank") && data.data[a].stats.attackdamage<0.95*maximo)|| data.data[a].tags.includes("Fighter") ){
-        listadeposiciones.push(data.data[a].name); 
         
-     }}console.log(listadeposiciones);console.log(listadeposiciones.length)
-     
-    }})}
+    if (posicion[i].textContent=="Toplaner" ){   
+        
+     for (var r in data.data){
+        var nombre=data.data[r].name
+        var ataque=data.data[r].stats.attackdamage
+        var tag=data.data[r].tags
+        
+        contenedorgrande.push({nombre,ataque,tag})
+    }
+    console.log(contenedorgrande)
     
     
-/*var abrirpopup=document.getElementsByClassName("card");
-for (let i = 0; i < abrirpopup.length; i++) {
-    abrirpopup[i].addEventListener("click", ()=>{
-    var elemclickdiv=document.getElementById('myModal');
-    elemclickdiv.style.display = "block";
-    })}*/
+     let nomyatac=contenedorgrande.filter(item=>{
+        return (item.ataque >=0.95*maximo && item.tag.includes("Tank")) || (item.ataque >=0.95*maximo && item.tag.includes("Fighter") ) ;
+        })
+        console.log(nomyatac)   
+     var listatopliner=[]
+     for (var k in nomyatac){
+         listatopliner.push(nomyatac[k].nombre)
+         
+     }
+     console.log(listatopliner)
+     filtrotop(".card",listatopliner);
+    }
+    
+
+    if (posicion[i].textContent=="Jungla" ){   
+        var comparativosvelocidad=[]
+        var comparativossplell=[]
+        var listamaxvel=[]
+        for (var campeones in data.data){
+            listamaxvel.push(data.data[campeones].stats.attackdamage); 
+           
+        }
+        var maximovel=Math.max.apply(null,listamaxvel) 
+            console.log(maximovel)
+            
+        //maximo ataque 355,minimo de los que estan ahi 325
+        //spellblock minimo 30
+        //maximo 10 mpregen
+        for (var r in data.data){
+            
+            
+            var nombre=data.data[r].name
+            var ataque=data.data[r].stats.attackdamage
+            var tag=data.data[r].tags
+            var spellblock=data.data[r].stats.spellblock
+            var gen= data.data[r].stats.mpregen
+            
+          
+            
+        }
+        contenedorgrande.push({nombre,ataque,tag,spellblock,gen})
+        console.log(comparativosvelocidad)
+        console.log(contenedorgrande)
+        let excluyo=contenedorgrande.filter(item=>{
+            return ( item> 0.88* maximovel && !item.tag.includes("mage")) ;
+            })
+            console.log(excluyo)   
+       }
+
+        }
+    
+        
+        ) }
+    
 
 
 const botonabrir = document.getElementById('menudesple');

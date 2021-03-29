@@ -27,3 +27,11 @@ document.querySelectorAll(selector).forEach((element) =>
  :element.classList.add("filter")
  )
 }
+
+export function filtrotop (selector,top) {
+    document.querySelectorAll(selector).forEach((element) => 
+    top.includes(element.textContent ) 
+    ?element.classList.remove("filter")
+    :element.classList.add("filter"))
+    }
+    
