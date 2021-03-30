@@ -56,8 +56,6 @@ function mostrarPopup(campeon) {
 buscarCampeones(".card-filter", ".card");
 
 
-
-
 const botonabrir = document.getElementById("menudesple");
 botonabrir.addEventListener("mouseover", abrir);
 botonabrir.addEventListener("mouseout", cerrar);
