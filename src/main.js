@@ -23,6 +23,9 @@ for (var campeones in data.data){
     name.innerText = campeon.name
     div.appendChild(name)
     div.appendChild(imagenCampeon)
+    div.onclick = function () {
+        mostrarPopup(campeon);
+      };
     contenido.appendChild(div);
    
 }
@@ -130,7 +133,7 @@ for (let i = 0; i < posicion.length; i++) {
         var comparativossplell=[]
         var listamaxvel=[]
         for (var campeones in data.data){
-            listamaxvel.push(data.data[campeones].stats.attackdamage); 
+            listamaxvel.push(data.data[campeones].stats.movespeed); 
            
         }
         var maximovel=Math.max.apply(null,listamaxvel) 
@@ -143,28 +146,58 @@ for (let i = 0; i < posicion.length; i++) {
             
             
             var nombre=data.data[r].name
-            var ataque=data.data[r].stats.attackdamage
+            var speed=data.data[r].stats.movespeed
             var tag=data.data[r].tags
             var spellblock=data.data[r].stats.spellblock
             var gen= data.data[r].stats.mpregen
             
-          
+            contenedorgrande.push({nombre,speed,tag,spellblock,gen})
             
         }
-        contenedorgrande.push({nombre,ataque,tag,spellblock,gen})
+        
         console.log(comparativosvelocidad)
         console.log(contenedorgrande)
-        let excluyo=contenedorgrande.filter(item=>{
-            return ( item> 0.88* maximovel && !item.tag.includes("mage")) ;
+        
+        var jungla=contenedorgrande.filter(item=>{
+            return (!item.tag.includes("Mage") && item.speed>=0.85*355 &&item.spellblock>30 && item.gen<10) ;
             })
-            console.log(excluyo)   
+           console.log(jungla)
+           var listajungla=[]
+           for (var k in jungla){
+            listajungla.push(jungla[k].nombre)
+            
+        }
+        console.log(listajungla)
+        filtrotop(".card",listajungla);
        }
+      
 
         }
     
         
         ) }
     
+
+//ventana emergente al seleccionar campeon para mirar caracteristicas
+function mostrarPopup(campeon) {
+    const contenido = document.getElementById("popup");
+    const name = document.createElement("h1");
+    const image = document.createElement("img");
+    const div = document.createElement("div");
+    div.id = "popupdiv";
+    name.innerText = campeon.id;
+    image.src = campeon.splash;
+    div.appendChild(name);
+    div.appendChild(image);
+    contenido.appendChild(div);
+  }
+  
+  //function cerrarPopup (){
+  //const contenido = document.getElementById("popup");
+  //contenido.innerHTML = '';
+  
+  //}
+
 
 
 const botonabrir = document.getElementById('menudesple');

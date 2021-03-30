@@ -34,4 +34,11 @@ export function filtrotop (selector,top) {
     ?element.classList.remove("filter")
     :element.classList.add("filter"))
     }
+
+    export function filtrojungla (selector,jungla) {
+        document.querySelectorAll(selector).forEach((element) => 
+        jungla.includes(element.textContent ) 
+        ?element.classList.remove("filter")
+        :element.classList.add("filter"))
+        }
     
