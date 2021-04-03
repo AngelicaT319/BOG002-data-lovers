@@ -5,82 +5,63 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale-1.0"/>
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" type="module"></script>
   </head>
   <body>
 
-    
+    <div class="contenedor">
+      <header>
 
-    <header class="inicio">
-      <div class="logos">  
-      <a id=logo href="https://na.leagueoflegends.com/es-mx/">  
-        <img id=logodentro src="img/logohome.png" alt="logo">
-      </a>       
-      </div>  
-    </header>
-    <nav class=contenedormenu>
-    <ul class=filtros>
-      <div  id=busqueda> <input id=Buscar type="search" placeholder="Buscar" class="card-filter">
-      </div>
-      <ul id=menudesple> <div id=textofiltro> Filtros</div> <ul class=menusito   href="#"> 
-        <ul class=menusito2> <li id=desplegables> 
-        
-          <ul id="abrirmenu" class="abrirmenu">
-            <li id=posiciones1> <div>Roles</div>
-              <ul id=subitem1>
-                <li class="roles" >Asesino</li>
-                <li class="roles" >Apoyo</li>
-                <li class="roles">Luchador</li>
-                <li class="roles">Tanque</li>
-                <li class="roles">Tirador</li>
-                <li class="roles">Mago</li>
-              </ul>
-            </li>    
+        <div class="logo"></div>
 
-      
-      <li id=posiciones> <div>Posiciones</div> 
-        <ul id=subitem1>
-          <li>Defensa</li>
-          <li>Central</li>
-          <li>Ataque</li>
-            </ul>
-      </li>
-      <li><a href="">Jugabilidad</a></li>
-     
-    </ul>
-    </li> 
-      </ul>
-    </ul> 
-    </ul>
-      
-    </nav>
-    
-        </ul>
-        
-      </section> 
+        <!-- Creamos barra de busqueda para escribir campeon en especifico -->
+        <form action="">
+          <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+        </form>
+
+        <!-- se agrega barra para mirar diferentes categorias existentes -->
+        <div class="categorias" id="categorias">
+          <a href="#" >Todos</a>
+          <a href="#">Asesinos</a>
+          <a href="#">Luchadores</a>
+          <a href="#">Magos</a>
+          <a href="#">Tiradores</a>
+          <a href="#">Apoyos</a>
+          <a href="#">Tanques</a>
+        </div>
+
+      </header>
+    </div>        
+           
+          
+      <main >
+
+        <section>
+        <div id="fichasCampeon" class="contenido"></div>
+      </section>
 
       <section>
-      <div id="popup" class="modal">
-       </div>  
-      </section>           
-      
-       
-      <main id="cartas" class="contenidoflex">  
-        
-       
+        <div id="popup" class="popup">
+         <button id="close">X</button>        
+        </div>  
+        </section> 
+
       </main>  
 
-      <!-- <section id=segundoscreen>
-          
-      </section> -->
+      
+
+
+      
+     
       
       
-      <footer >
+      <!-- <footer >
         <span class=" imageneshor" ><a href="https://www.facebook.com/leagueoflegends" class="facebook"><img class=" imagenes" src="./img/facebook.png" alt=""> </a></span>
           <span class=" imageneshor"><a href="https://www.instagram.com/leagueoflegends/?hl=es-la" class="instagram"><img class=" imagenes" src="./img/instagram.png" alt=""></a></span>
           <span class=" imageneshor"><a href="https://twitter.com/lollatam?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" ><img class=" imagenes" src="./img/twitter.png" alt=""> </a></span>
           <span class=" imageneshor"><a href="https://www.youtube.com/channel/UCmvoPMHe9l0ytr9ONu5-1vw" class="youtube"><img  class=" imagenes" src="./img/youtube.png" alt=""> </a></span>          
      
-      </footer>
-      <script src="main.js" type="module"></script>
+      </footer> -->
+      
   </body>
 </html>
