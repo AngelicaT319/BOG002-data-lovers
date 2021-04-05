@@ -1,5 +1,4 @@
 import data from './data/lol/lol.js';
-
 import {buscarCampeones, filtrotop} from  './data.js';
 import {filtrorol} from  './data.js';
 
