@@ -2,8 +2,10 @@ import data from "./data/lol/lol.js";
 
 const contenido = document.getElementById("fichasCampeon");
 
+
+
 //Funcion para mostrar campeones
-//genera reflow
+
 for (var campeones in data.data) {
   const campeon = data.data[campeones];
   const div = document.createElement("div");
@@ -22,7 +24,7 @@ for (var campeones in data.data) {
   contenido.appendChild(div);
 }
 
- 
+//Barra de busqueda
 
 
 
@@ -34,12 +36,6 @@ function mostrarPopup(campeon) {
   const imagen = document.createElement("img");
   const description = document.createElement("p");
   
-  
-
-  
-  
-
-
   div.id = "popupdiv";
   
   name.innerText = campeon.id;
@@ -49,13 +45,5 @@ function mostrarPopup(campeon) {
   contenido.appendChild(div);
   div.appendChild(name);
   div.appendChild(imagen);
-  div.appendChild(description);
- 
-  
+  div.appendChild(description); 
 }
-
-
-
-
-
-

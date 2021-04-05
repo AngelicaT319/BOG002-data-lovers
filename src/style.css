@@ -24,14 +24,15 @@ header {
   padding: 50px 0;
 }
 
-header form {
+/* Contenido general */
+ form {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
-header .barra-busqueda {
+.barra-busqueda {
   width: 70%;
   height: 40px;
   line-height: 40px;
@@ -42,20 +43,20 @@ header .barra-busqueda {
   font-size: 16px;
 }
 
-header .categorias {
+.categorias {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-header .categorias a {
+.categorias input {
   color: #000;
   margin: 10px 20px;
   font-size: 18px;
 }
 
-/* Contenido general */
-main .contenido {
+
+ .contenido {
   position: relative;
   margin-left: 50px;
   margin-right: 50px;
@@ -79,6 +80,8 @@ main .contenido {
   height: 82px;
   border: 1px solid cornsilk;
 }
+
+
 
 /* Ventana Emergente */
 #popupdiv{
