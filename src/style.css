@@ -7,6 +7,7 @@
   body {
     background-image: url(./img/mapa-el-bosque-retorcido.jpg);
     margin: 0;
+    
   }
   
   /*Header*/
@@ -35,11 +36,12 @@
   
   .filtros {
     height: 3em;
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
+    
     
   }
   
@@ -50,6 +52,20 @@
     flex-direction: column;
   }
   
+  /*NAV*/
+  #lupa{
+    background-color:black;
+    height: 70%;
+    width: 10%;
+  }
+  #imagenlupa{
+    height: 100%;
+  }
+  
+  .contenedormenu{
+    background-color: #897221;
+    
+  }
   #textofiltro {
       background-color: #897221;
     display: flex;
@@ -101,7 +117,7 @@
   
   #busqueda {
        width: 30%;
-    margin-left: 20%;
+    margin-left: 5%;
     display: flex;
     justify-content: center;
     align-content: center;

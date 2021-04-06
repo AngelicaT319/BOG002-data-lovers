@@ -1,23 +1,18 @@
 import data from './data/lol/lol.js';
-import {buscarCampeones, filtrotop} from  './data.js';
-import {filtrorol} from  './data.js';
+import { filtrotop } from  './data.js';
+import {filtrojungla} from  './data.js';
 
-const contenido = document.getElementById('cartas');
 
-//Funcion para buscar campeones
+//Primera parte de interaccion
+//Mostrar campeones interactua con el DOM
 //genera reflow
+const contenido = document.getElementById('cartas');
 for (var campeones in data.data){
     const campeon = (data.data[campeones])
     var div = document.createElement("div");
     var name = document.createElement("h3");
     var imagenCampeon = document.createElement("img");
     div.className='card';
-    
-     
-    
-    /*name.className='card';
-    imagenCampeon.className='card';*/
-    
     imagenCampeon.src = campeon.img;
     name.innerText = campeon.name
     div.appendChild(name)
@@ -25,9 +20,25 @@ for (var campeones in data.data){
     div.onclick = function () {
         mostrarPopup(campeon);
       };
-    contenido.appendChild(div);
-   
+    contenido.appendChild(div);   
 }
+//Segunda parte de interaccion
+//Primer filtro de busqueda no retorna nada
+    document.addEventListener("keyup",(e) =>{
+        //target funciona pa saber cuando avtive el evento jiji
+        if(e.target.matches(".card-filter")){
+            //matches verifica que la clase sea la misma
+            //element generalizacion para representar un objeto en html y sacar cositas de ahi jiji xd
+            document.querySelectorAll(".card").forEach((element) => 
+            //tolower pasa todo a minuscula pa que sea mas sencillo
+             element.textContent.toLowerCase().includes(e.target.value)
+             //despues del signo de pregunta es como el true :D si la condicion de arriba se cumple
+            ?element.classList.remove("filter")
+            :element.classList.add("filter")
+            );            
+        }
+    });    
+
 
 /*for (var campeones in data.data){
 
@@ -41,8 +52,9 @@ for (var campeones in data.data){
 }*/
 
     
-buscarCampeones(".card-filter", ".card");
 
+//Tercera parte primer filtro de roles
+//Tambien interactua con el dom
 
 var roles=document.getElementsByClassName("roles");
 var roleslista=""
@@ -72,16 +84,19 @@ for (let i = 0; i < roles.length; i++) {
       listaderoles.push(data.data[rep].name);  
     }
  }
- filtrorol(".card",listaderoles);
+
+    document.querySelectorAll(".card").forEach((element) => 
+    listaderoles.includes(element.textContent ) 
+     ?element.classList.remove("filter")
+     :element.classList.add("filter")
+     )
     
 }
 )}
 
 
-
+//Posiciones es el tercer filtro depronto si se testea 
 var contenedorgrande=[]
-
-
 
 var posicion=document.getElementsByClassName("posiciones");
 
@@ -129,7 +144,7 @@ for (let i = 0; i < posicion.length; i++) {
 
     if (posicion[i].textContent=="Jungla" ){   
         var comparativosvelocidad=[]
-        var comparativossplell=[]
+        
         var listamaxvel=[]
         for (var campeones in data.data){
             listamaxvel.push(data.data[campeones].stats.movespeed); 
@@ -167,13 +182,9 @@ for (let i = 0; i < posicion.length; i++) {
             
         }
         console.log(listajungla)
-        filtrotop(".card",listajungla);
+        filtrojungla (".card",listajungla);
        }
-      
-
         }
-    
-        
         ) }
     
 
