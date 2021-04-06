@@ -43,13 +43,21 @@ header {
   font-size: 16px;
 }
 
-.categorias {
+.filter {
+  visibility: hidden;
+  opacity: 0;
+  order: 1;
+}
+
+
+
+.category {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.categorias input {
+.category input {
   color: #000;
   margin: 10px 20px;
   font-size: 18px;
