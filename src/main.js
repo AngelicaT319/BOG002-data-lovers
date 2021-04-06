@@ -1,6 +1,5 @@
 import data from "./data/lol/lol.js";
-
-const contenido = document.getElementById("fichasCampeon");
+const dataCampeones = document.querySelector("#fichasCampeon");
 
 
 
@@ -21,10 +20,10 @@ for (var campeones in data.data) {
   mostrarPopup(campeon);
   };
 
-  contenido.appendChild(div);
+  dataCampeones.appendChild(div);
 }
 
-//Barra de busqueda
+
 
 
 
