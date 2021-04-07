@@ -1,3 +1,7 @@
+import data from './data/lol/lol.js';
+
+
+
 export function buscarCampeones (input,selector) {
   //utilizar metodos aca de los puros para filter
   //y esto es lo que hay que testear

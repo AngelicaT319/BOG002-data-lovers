@@ -1,23 +1,21 @@
-import { example, anotherExample } from '../src/data.js';
+import {mostrarcartas} from '../src/data.js';
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('mostrarcartas', () => {
+  it('Es un objeto', () => {
+    expect(typeof mostrarcartas).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
+it('debería retornar true si es object la data', () => {
+})
+})
 
-
-describe('anotherExample', () => {
-  it('is a function', () => {
+/*describe('anotherExample', () => {
+  it.skip('is a function', () => {
     expect(typeof anotherExample).toBe('function');
   });
 
   it('returns `anotherExample`', () => {
     expect(anotherExample()).toBe('OMG');
   });
-});
+});*/
