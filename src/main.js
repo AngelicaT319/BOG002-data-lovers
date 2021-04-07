@@ -196,12 +196,21 @@ function mostrarPopup(campeon) {
     const name = document.createElement("h1");
     const image = document.createElement("img");
     const div = document.createElement("div");
+    const btn = document.createElement("button");
     div.id = "popupdiv";
     name.innerText = campeon.id;
     image.src = campeon.splash;
+    btn.innerText = "close";
     div.appendChild(name);
     div.appendChild(image);
     contenido.appendChild(div);
+    div.appendChild(btn);
+
+    btn.onclick function {
+
+      contenido.innerText = "";
+
+    }
   }
   
  
