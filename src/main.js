@@ -206,9 +206,9 @@ function mostrarPopup(campeon) {
     contenido.appendChild(div);
     div.appendChild(btn);
 
-    btn.onclick function {
+    btn.onclick = function() {
 
-      contenido.innerText = "";
+      contenido.innerHTML = "";
 
     }
   }
