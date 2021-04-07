@@ -26,7 +26,7 @@ for (var campeones in data.data){
 //Primer filtro de busqueda no retorna nada
     document.addEventListener("keyup",(e) =>{
         //target funciona pa saber cuando avtive el evento jiji
-        if(e.target.matches(".card-filter")){
+        if(e.target.matches(".busqueda")){
             //matches verifica que la clase sea la misma
             //element generalizacion para representar un objeto en html y sacar cositas de ahi jiji xd
             document.querySelectorAll(".card").forEach((element) => 
@@ -203,50 +203,6 @@ function mostrarPopup(campeon) {
     div.appendChild(image);
     contenido.appendChild(div);
   }
-<<<<<<< HEAD
-}
-
-const botonabrir = document.getElementById("menudesple");
-botonabrir.addEventListener("mouseover", abrir);
-botonabrir.addEventListener("mouseout", cerrar);
-
-const posiciones2 = document.getElementById("posiciones2");
-posiciones2.addEventListener("mouseover", abrir2);
-posiciones2.addEventListener("mouseout", cerrar2);
-
-const posiciones1 = document.getElementById("posiciones1");
-posiciones1.addEventListener("mouseover", abrir1);
-posiciones1.addEventListener("mouseout", cerrar1);
-
-function abrir() {
-  var elem = document.getElementById("desplegables");
-  elem.style.display = "block";
-}
-
-function cerrar() {
-  var elem = document.getElementById("desplegables");
-  elem.style.display = "none";
-}
-
-function abrir1() {
-  var elem = document.getElementById("subitem1");
-  elem.style.display = "block";
-}
-
-function cerrar1() {
-  var elem = document.getElementById("subitem1");
-  elem.style.display = "none";
-}
-function abrir2() {
-  var elem = document.getElementById("subitem2");
-  elem.style.display = "block";
-}
-
-function cerrar2() {
-  var elem = document.getElementById("subitem2");
-  elem.style.display = "none";
-}
-=======
   
  
 
@@ -293,4 +249,3 @@ function abrir(){
     var elem=document.getElementById('subitem2');
     elem.style.display = "none";
    }
->>>>>>> 0e98eba7c8f7a04c55279e46cefab42949f555fe
