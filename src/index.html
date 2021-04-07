@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale-1.0"/>
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@636&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="inicio">
@@ -16,16 +18,43 @@
     </header>
     <nav class=contenedormenu>
     <ul class=filtros>
-      <div id=lupa> <img id=imagenlupa src="img/lupa.png" alt=""> </div>
-      <div  id=busqueda> <input id=Buscar type="search" placeholder="Buscar" class="card-filter"></div>
-      
-     
-   
+      <div id=contenedorbusqueda>
+      <div id=lupa> <img id=imagenlupa src="img/lupa.png" alt=""></div>
+      <div  id=busqueda> <input id=Buscar type="search" placeholder="Busca un campeon" class="busqueda"></div></div>
+     <ul class=filtros2>
+       <li class="mainfilter" id=opcionfiltroroles> <ul class="opcionalfilter" id="opcionfilteroles">Roles</ul> 
+         <ul id=subitem1 class="subitems">
+          <li class="roles" >Asesino</li>
+          <li class="roles" >Apoyo</li>
+          <li class="roles">Luchador</li>
+          <li class="roles">Tanque</li>
+          <li class="roles">Tirador</li>
+          <li class="roles">Mago</li>
+         </ul>
+       </li>
+       <li class="mainfilter" id="opcionfiltroposiciones"><ul class="opcionalfilter">Posiciones</ul>
+        <ul id=subitem2 class="subitems"> 
+          <li class="posiciones">Toplaner</li>
+          <li class="posiciones">Jungla</li>
+          <li class="posiciones">Midlaner</li>
+          <li class="posiciones">AD Carry</li>
+          <li class="posiciones">Support</li>
+        </li>
+        </ul>
+       
+       <li class="mainfilter" id="opcionfiltrojugabilidad"> <ul class="opcionalfilter">Jugabilidad</ul>
+        <ul id=subitem3 class="subitems"> 
+          <li class="jugabilidad">Principiante</li>
+          <li class="jugabilidad">Intermedio</li>
+          <li class="jugabilidad">Experimentado</li>
+       </li>
+     </ul>
     </ul>
-        
+    
     </nav>
     
-       
+        </ul>
+        
       </section>
       
     </section> 

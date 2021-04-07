@@ -40,20 +40,21 @@ for (var campeones in data.data){
     });    
 
 
-/*for (var campeones in data.data){
-
-    let campeon = (data.data[campeones].stats.attackdamage)
-    let defensa=(data.data[campeones].stats.armor)
-    let MAGIA=(data.data[campeones].stats.spellblock)
-    console.log( " ATAQUE ",campeon, " DEFENSA "+ defensa, " MAGIA " +MAGIA)
-    if (data.data[campeones].tags.includes("Fighter")){
- console.log(data.data[campeones].name)
-    }
-}*/
+for (var campeones in data.data){
+if (data.data[campeones].name == "Orianna"||data.data[campeones].name  == "Akali"||data.data[campeones].name  == "Yasuo"
+||data.data[campeones].name  == "Syndra"||data.data[campeones].name  == "Leblanc"||data.data[campeones].name  == "Galio"
+||data.data[campeones].name  == "Pantheon"||data.data[campeones].name  == "Vladimir"){
+    let campeon = (data.data[campeones].stats)
+    //let defensa=(data.data[campeones].stats.armor)
+    //let MAGIA=(data.data[campeones].stats.spellblock)
+    console.log( " Todo",campeon)
+    
+}
+}
 
     
 
-//Tercera parte primer filtro de roles
+//Tercera parte segundo filtro el cual es roles
 //Tambien interactua con el dom
 
 var roles=document.getElementsByClassName("roles");
@@ -153,9 +154,7 @@ for (let i = 0; i < posicion.length; i++) {
         var maximovel=Math.max.apply(null,listamaxvel) 
             console.log(maximovel)
             
-        //maximo ataque 355,minimo de los que estan ahi 325
-        //spellblock minimo 30
-        //maximo 10 mpregen
+        
         for (var r in data.data){
             
             
@@ -184,6 +183,9 @@ for (let i = 0; i < posicion.length; i++) {
         console.log(listajungla)
         filtrojungla (".card",listajungla);
        }
+       if (posicion[i].textContent=="Midlaner" ){
+        
+       }
         }
         ) }
     
@@ -202,45 +204,42 @@ function mostrarPopup(campeon) {
     contenido.appendChild(div);
   }
   
-  //function cerrarPopup (){
-  //const contenido = document.getElementById("popup");
-  //contenido.innerHTML = '';
-  
-  //}
+ 
+
+  //Interaccion de filtros
 
 
+const filtroroles = document.getElementById('opcionfiltroroles');
+filtroroles.addEventListener('mouseover',abrir);
+filtroroles.addEventListener('mouseout',cerrar);
 
-const botonabrir = document.getElementById('menudesple');
-botonabrir.addEventListener('mouseover',abrir);
-botonabrir.addEventListener('mouseout',cerrar);
-
-const posiciones2 = document.getElementById('posiciones2');
+const posiciones2 = document.getElementById('opcionfiltroposiciones');
 posiciones2.addEventListener('mouseover',abrir2);
 posiciones2.addEventListener('mouseout',cerrar2);
 
-const posiciones1 = document.getElementById('posiciones1');
+const posiciones1 = document.getElementById('opcionfiltrojugabilidad');
 posiciones1.addEventListener('mouseover',abrir1);
 posiciones1.addEventListener('mouseout',cerrar1);
 
 function abrir(){
-    var elem=document.getElementById('desplegables');
+    var elem=document.getElementById('subitem1');
     elem.style.display = "block";
    }
    
    function cerrar(){
-    var elem=document.getElementById('desplegables');
+    var elem=document.getElementById('subitem1');
     elem.style.display = "none";
    }
-   
    function abrir1(){
-    var elem=document.getElementById('subitem1');
+    var elem=document.getElementById('subitem3');
     elem.style.display = "block";
    }
    
    function cerrar1(){
-    var elem=document.getElementById('subitem1');
+    var elem=document.getElementById('subitem3');
     elem.style.display = "none";
    }
+  
    function abrir2(){
     var elem=document.getElementById('subitem2');
     elem.style.display = "block";
