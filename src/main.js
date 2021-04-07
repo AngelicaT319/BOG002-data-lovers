@@ -178,6 +178,12 @@ function mostrarPopup(campeon) {
   div.appendChild(image);
   contenido.appendChild(div);
   div.appendChild(btn);
+
+  btn.onclick = function () {
+    // Ocultar la ventana emergente
+    contenido.innerHTML = "";
+    
+  }
 }
 
 //function cerrarPopup (){
