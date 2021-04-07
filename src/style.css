@@ -177,12 +177,7 @@
     
   
 }
-.card {
-  display: grip;
-  align-items: center;
-  text-align: center;
-  
-}
+
   .subitems{
     background-color:rgba(5, 197, 255, 0.911);
     display: flex;
@@ -245,6 +240,7 @@
   }
   #popupdiv {
     position: absolute;
+    z-index: 2;
      display: block; 
      justify-content: space-between;
       align-items:center;      
