@@ -1,6 +1,4 @@
 import data from './data/lol/lol.js';
-import { filtrotop } from  './data.js';
-import {filtrojungla} from  './data.js';
 
 
 //Primera parte de interaccion
@@ -85,7 +83,7 @@ for (let i = 0; i < roles.length; i++) {
       listaderoles.push(data.data[rep].name);  
     }
  }
-
+//filtrorol
     document.querySelectorAll(".card").forEach((element) => 
     listaderoles.includes(element.textContent ) 
      ?element.classList.remove("filter")
@@ -139,8 +137,16 @@ for (let i = 0; i < posicion.length; i++) {
          
      }
      console.log(listatopliner)
-     filtrotop(".card",listatopliner);
+    
+
+     
+        document.querySelectorAll(".card").forEach((element) => {
+        listatopliner.includes(element.textContent ) 
+        ?element.classList.remove("filter")
+        :element.classList.add("filter")
+    
     }
+    )}
     
 
     if (posicion[i].textContent=="Jungla" ){   
@@ -181,8 +187,14 @@ for (let i = 0; i < posicion.length; i++) {
             
         }
         console.log(listajungla)
-        filtrojungla (".card",listajungla);
-       }
+        
+
+        document.querySelectorAll(".card").forEach((element) => {
+        listajungla.includes(element.textContent ) 
+      ?element.classList.remove("filter")
+      :element.classList.add("filter")
+        }
+    )}
        if (posicion[i].textContent=="Midlaner" ){
         
        }
