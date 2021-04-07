@@ -186,12 +186,6 @@ function mostrarPopup(campeon) {
   }
 }
 
-//function cerrarPopup (){
-//const contenido = document.getElementById("popup");
-//contenido.innerHTML = '';
-
-//}
-
 const botonabrir = document.getElementById("menudesple");
 botonabrir.addEventListener("mouseover", abrir);
 botonabrir.addEventListener("mouseout", cerrar);
